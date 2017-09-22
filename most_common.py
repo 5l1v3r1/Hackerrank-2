@@ -1,6 +1,6 @@
 #!/bin/python3
 
-# This is a solution to the problem on Hackerrand - https://www.hackerrank.com/challenges/most-commons/problem
+# This is a solution to the problem on Hackerrank - https://www.hackerrank.com/challenges/most-commons/problem
 
 #!/bin/python3
 
@@ -10,6 +10,7 @@ result2 = {}
 for x in alpha.keys():
     result2.update({x:s.count(x)})
         
+#The below statement sorts the data first according to numbers and then characters.
 result = sorted(result2.items(), key=lambda x: (-x[1],x[0]))
 result3 = result[:3]
 max1, num1 = result3[0]
